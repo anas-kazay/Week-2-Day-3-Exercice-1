@@ -1,4 +1,8 @@
 package anas.kazay.dependencyinjectionapp.decoupled;
 
-public class HelloWorldMessageProvider {
+public class HelloWorldMessageProvider implements MessageProvider {
+    @Override
+    public String getMessage() {
+        return "Hello World!";
+    }
 }
